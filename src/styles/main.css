@@ -1,0 +1,19 @@
+
+
+#enter {
+  font-family: 'Limelight', cursive;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* #curtains {
+  background: url('https://www.freepnglogos.com/uploads/curtain-png/curtain-family-tradition-0.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
+#navbar-link {
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+}

@@ -25,7 +25,7 @@ const Favourites = () => {
     }
     getData()
 
-    setNewMovie([...newMovie, newMovie])
+
 
   }, [])
 

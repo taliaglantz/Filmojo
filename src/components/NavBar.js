@@ -1,4 +1,4 @@
-import React from 'react' 
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 
@@ -15,11 +15,11 @@ const NavBar = () => {
         </div>
         <div className="navbar-start">
           <div className="navbar-item">
-            <Link className="has-text-white" to="/movies">Movie Index</Link>
+            <Link className="has-text-white" id="navbar-link" to="/movies">Movie Index</Link>
           </div>
-      
-       
-          <div className="select is-link is-small">
+
+
+          <div className="select is-link is-small is-centered">
             <select>
               <option value="genres">Genres</option>
               <option value="action">Action</option>
@@ -33,12 +33,14 @@ const NavBar = () => {
               <option value="thriller">Thriller</option>
             </select>
           </div>
-          <div className="navbar-end">
-            <div className="navbar-item"><Link className="has-text-white" to="/favourites">🍿 Favourites</Link></div>
-          </div>
-
         </div>
+
+        <div className="navbar-end">
+          <div className="navbar-item" ><Link className="has-text-white" id="navbar-link" to="/favourites">🍿 Favourites</Link></div>
+        </div>
+
       </div>
+
 
     </nav>
 
