@@ -1,4 +1,6 @@
-
+/* #hero-background {
+  background-image: url('../src/assets/curtain-17437.png'); */
+/* } */
 
 #enter {
   font-family: 'Limelight', cursive;
@@ -6,14 +8,44 @@
   letter-spacing: 3px;
 }
 
-/* #curtains {
-  background: url('https://www.freepnglogos.com/uploads/curtain-png/curtain-family-tradition-0.png');
-  background-size: contain;
+#curtains {
+  background: url('../assets/curtain-17437.png');
+  background-size: cover;
   background-repeat: no-repeat;
-} */
-
+  background-color: black;
+}
 #navbar-link {
   font-weight: bold;
   text-transform: lowercase;
   letter-spacing: 3px;
+ }
+
+
+ #index {
+  /* background-image: linear-gradient( rgb(226, 40, 102), rgb(53, 53, 53)); */
+  background: rgb(53, 53, 53);
+ }
+
+#card-subtitle.title.is-7 {
+  padding-left: 20px;
+}
+
+.card {
+  border-radius: 5px;
+}
+#navbar {
+  /* background-color: black; */
+  background: linear-gradient( rgb(0, 0, 0), rgb(53, 53, 53));
+}
+
+img {
+  border-radius: 5px;
+}
+
+#select {
+  margin-top: 8px;
+}
+
+#nav-content {
+  margin-top: 5px;
 }
