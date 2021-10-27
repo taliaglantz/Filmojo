@@ -23,11 +23,11 @@ const MovieShow = () => {
 
   }, [id])
 
-  const setIdToLocalStorage = (id) => {
+  const setMovieToLocalStorage = ( id ) => {
     window.localStorage.setItem('id', id)
   }
 
-  console.log('id ->', id)
+  console.log('movie ->', movie)
 
   console.log('MOVIE ON STATE ->', movie)
 
@@ -60,7 +60,7 @@ const MovieShow = () => {
                 <h4 className="title is-4">Run Time</h4>
                 <p>{movie.runtimeStr}</p>
                 <hr />
-                <button className="button is-danger is-rounded" onClick={setIdToLocalStorage(movie.id)}>FAVOURITE</button>
+                <button className="button is-danger is-rounded" onClick={setMovieToLocalStorage(id)}>FAVOURITE</button>
                 <hr />
               </div>
               {/* <div className="column is-full">

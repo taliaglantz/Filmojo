@@ -24,22 +24,23 @@ const MovieIndex = () => {
   return (
     <section className="section">
       <div className="container">
-        <div className="columns is-multiline">
-          {movies.map(movie => {
-            return (
+        {movies.length ?
+          <div className="columns is-multiline">
+            {movies.map(movie => {
+              return (
 
-              <MovieCard key={movie.id} {...movie} />
+                <MovieCard key={movie.id} {...movie} />
 
-            )
-          })}
+              )
+            })}
 
 
-        </div>
-
-        <h2 className="title has-text-centered">
-          {hasError ? 'Something has gone wrong!' : 'loading...'}
-        </h2>
-
+          </div>
+          :
+          <h2 className="title has-text-centered">
+            {hasError ? 'Something has gone wrong!' : 'loading...'}
+          </h2>
+        }
       </div>
     </section>
 
