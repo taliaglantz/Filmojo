@@ -6,6 +6,7 @@ import { Link, useParams } from 'react-router-dom'
 
 const Favourites = () => {
   const [newMovie, setNewMovie] = useState([])
+  
   const [hasError, setHasError] = useState(false)
   const { id } = useParams()
 
@@ -24,10 +25,9 @@ const Favourites = () => {
       }
     }
     getData()
-
-
-
   }, [])
+
+  
 
 
 

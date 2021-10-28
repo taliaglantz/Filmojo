@@ -52,4 +52,33 @@
 
 // Bulma
 
+// Notes
+
+// Favourites
+// we already have the ability to store and retrieve and id 
+// we can display this id as a card on the page
+// we want to be able to display more than one card on the page
+// we need to ADD to the favourite item we have already displayed
+
+
+// Similar cards
+// we already have been able to display the names of the similar cards
+// we want to be able to display the infomration in cards and have the abiblity to click on them, which would take you to that card's page
+
+
+<div className="column is-11 is-offset-1">
+<h4 className="title is-4">Similar</h4>
+<div className="columns">
+  <div className="column is-one-quarter">
+    <div className="card">
+      <figure className="image image-is-3by4">
+        <img src={movie.similars[1].image} alt={movie.similars[1].title}></img>
+      </figure>
+      <div className="card-header">
+        <div className="card-header-title title is-7">{movie.similars[1].title}</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 

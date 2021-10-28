@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import MovieCard from './MovieCard'
 import axios from 'axios'
-
-
 const MovieIndex = () => {
-
   const [movies, setMovies] = useState([])
   const [hasError, setHasErrors] = useState(false)
   useEffect(() => {
@@ -19,33 +16,24 @@ const MovieIndex = () => {
     }
     getData()
   }, [])
-
-
   return (
-    <section className="section">
+    <section className="section" id="index">
       <div className="container">
         {movies.length ?
           <div className="columns is-multiline">
             {movies.map(movie => {
               return (
-
                 <MovieCard key={movie.id} {...movie} />
-
               )
             })}
-
-
           </div>
           :
           <h2 className="title has-text-centered">
-            {hasError ? 'Something has gone wrong!' : 'loading...'}
+            {hasError ? 'Oops, something has gone wrong!' : 'Loading movies...'}
           </h2>
         }
       </div>
     </section>
-
-
   )
 }
-
 export default MovieIndex

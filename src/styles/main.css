@@ -2,6 +2,11 @@
   background-image: url('../src/assets/curtain-17437.png'); */
 /* } */
 
+body {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  color: white;
+}
+
 #enter {
   font-family: 'Limelight', cursive;
   text-transform: uppercase;
@@ -20,19 +25,34 @@
   letter-spacing: 3px;
  }
 
+ 
+
+ h4 {
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   /* border: 2px solid white; */
+   
+ }
+
+ #show-content {
+  background: linear-gradient( rgb(0, 0, 0), rgb(53, 53, 53));
+ }
+
 
  #index {
   /* background-image: linear-gradient( rgb(226, 40, 102), rgb(53, 53, 53)); */
   background: rgb(53, 53, 53);
  }
 
-#card-subtitle.title.is-7 {
+/* #card-subtitle.title.is-7 {
   padding-left: 20px;
-}
+} */
 
-.card {
+/* .card {
   border-radius: 5px;
-}
+} */
+
 #navbar {
   /* background-color: black; */
   background: linear-gradient( rgb(0, 0, 0), rgb(53, 53, 53));

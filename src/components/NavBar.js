@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react' 
 import { Link } from 'react-router-dom'
 
 
@@ -6,8 +6,8 @@ const NavBar = () => {
 
 
   return (
-    <nav className="navbar is-dark">
-      <div className="container">
+    <nav className="navbar is-dark" id="navbar">
+      <div className="container" id="nav-content">
         <div className="navbar-brand">
           <span role="img" aria-label="logo" className="title">
             <Link to="/">🎬</Link>
@@ -16,10 +16,8 @@ const NavBar = () => {
         <div className="navbar-start">
           <div className="navbar-item">
             <Link className="has-text-white" id="navbar-link" to="/movies">Movie Index</Link>
-          </div>
-
-
-          <div className="select is-link is-small is-centered">
+          </div>  
+          <div className="select is-link is-small is-rounded" id="select">
             <select>
               <option value="genres">Genres</option>
               <option value="action">Action</option>
@@ -34,13 +32,12 @@ const NavBar = () => {
             </select>
           </div>
         </div>
-
         <div className="navbar-end">
-          <div className="navbar-item" ><Link className="has-text-white" id="navbar-link" to="/favourites">🍿 Favourites</Link></div>
+          <div className="navbar-item"><Link className="has-text-white" id="navbar-link" to="/favourites">🍿 Favourites</Link></div>
         </div>
 
       </div>
-
+      
 
     </nav>
 
