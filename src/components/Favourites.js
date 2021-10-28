@@ -35,22 +35,24 @@ const Favourites = () => {
   //console.log(getMovieFromLocalStorage())
 
   return (
-    <>
+    <section className="hero is-fullheight-with-navbar is-dark">
+      <div className="columns is-centered">
 
-      <div className="column is-one-quarter-desktop is-one-third-tablet">
-        <Link to={`/movies/${id}`}>
-          <div className="card">
-            <div className="card-header">
-              <div className="card-subtitle title is-5">{newMovie.rank}</div>
-              <div className="card-header-title title is-4">{newMovie.title}</div>
+        <div className="column is-one-quarter-desktop is-one-third-tablet">
+          <Link to={`/movies/${id}`}>
+            <div className="card">
+              <div className="card-header">
+                
+                <div className="card-header-title title-is-4 has-text-dark">{newMovie.title}</div>
+              </div>
+              <figure className="image image-is-1by1">
+                <img src={newMovie.image} alt={newMovie.title}></img>
+              </figure>
             </div>
-            <figure className="image image-is-1by1">
-              <img src={newMovie.image} alt={newMovie.title}></img>
-            </figure>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
-    </>
+    </section>
   )
 }
 
