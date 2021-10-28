@@ -67,3 +67,23 @@
 // //we want to be able to display the infomration in cards and have the abiblity to click on them, which would take you to that card's page
 
 
+// <section className="section" id="index">
+    //   <div className="container">
+    //     <div className="columns is-multiline">
+
+    //       <div className="column is-one-quarter-desktop is-one-third-tablet">
+    //         <div className="card">
+    //           <figure className="image image-is-3by4">
+    //             <img src={movies[1].image} alt={movies[1].title}></img>
+    //           </figure>
+    //           <div className="header">
+    //             <div className="card-header-title title is-7">{movies[1].title}
+    //             </div>
+    //           </div>
+    //         </div>
+
+    //       </div>
+    //     </div>
+    //   </div>
+
+    //</section>

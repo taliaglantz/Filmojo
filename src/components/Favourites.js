@@ -18,7 +18,7 @@ const Favourites = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`https://imdb-api.com/en/API/Title/k_0vc4n4g6/${getMovieFromLocalStorage()}`)
+        const { data } = await axios.get(`https://imdb-api.com/en/API/Title/k_baoxz6jf/${getMovieFromLocalStorage()}`)
         setNewMovie(data)
       } catch (err) {
         setHasError(true)

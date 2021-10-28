@@ -15,7 +15,7 @@ const MovieShow = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`https://imdb-api.com/en/API/Title/k_0vc4n4g6/${id}`)
+        const { data } = await axios.get(`https://imdb-api.com/en/API/Title/k_baoxz6jf/${id}`)
         setMovies(data)
         // console.log('response ->', response)
       } catch (err) {
