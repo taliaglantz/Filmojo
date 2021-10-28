@@ -17,7 +17,8 @@ const NavBar = () => {
           <div className="navbar-item">
             <Link className="has-text-white" id="navbar-link" to="/movies">Movie Index</Link>
           </div>  
-          <div className="select is-link is-small is-rounded" id="select">
+          <button className="button is-danger is-small is-rounded is-outlined"><Link className="has-text-white" to="/shuffle">Shuffle</Link></button>
+          {/* <div className="select is-link is-small is-rounded" id="select">
             <select>
               <option value="genres">Genres</option>
               <option value="action">Action</option>
@@ -30,7 +31,7 @@ const NavBar = () => {
               <option value="sci-fi">Sci-fi</option>
               <option value="thriller">Thriller</option>
             </select>
-          </div>
+          </div> */}
         </div>
         <div className="navbar-end">
           <div className="navbar-item"><Link className="has-text-white" id="navbar-link" to="/favourites">🍿 Favourites</Link></div>

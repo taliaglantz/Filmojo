@@ -6,7 +6,7 @@ import { Link, useParams } from 'react-router-dom'
 
 const Favourites = () => {
   const [newMovie, setNewMovie] = useState([])
-  
+
   const [hasError, setHasError] = useState(false)
   const { id } = useParams()
 
@@ -18,7 +18,7 @@ const Favourites = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`https://imdb-api.com/en/API/Title/k_ey8se4et/${getMovieFromLocalStorage()}`)
+        const { data } = await axios.get(`https://imdb-api.com/en/API/Title/k_0vc4n4g6/${getMovieFromLocalStorage()}`)
         setNewMovie(data)
       } catch (err) {
         setHasError(true)
@@ -27,12 +27,12 @@ const Favourites = () => {
     getData()
   }, [])
 
-  
 
 
 
 
-  console.log(getMovieFromLocalStorage())
+
+  //console.log(getMovieFromLocalStorage())
 
   return (
     <>

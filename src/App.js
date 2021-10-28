@@ -5,6 +5,7 @@ import MovieIndex from './components/MovieIndex'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import MovieShow from './components/MovieShow'
 import Favourites from './components/Favourites'
+import Shuffle from './components/Shuffle'
 
 const App = () => {
   // console.log('movies on state->', movies)
@@ -16,6 +17,7 @@ const App = () => {
         <Route exact path="/movies" component={MovieIndex}/>
         <Route exact path="/movies/:id" component={MovieShow}/>
         <Route exact path="/favourites" component={Favourites}/>
+        <Route exact path="/shuffle" component={Shuffle}/>
 
       </Switch>
       

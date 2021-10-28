@@ -27,23 +27,23 @@
 
 // Day
 
-// build out movie card
-// use same bulma for now then change it all later?
-// move movie card to seperate file
-// move MovieIndex to seperate file
-// create home file
-// create routes in app.js
-// ensure links are all set up
+// //build out movie card
+// //use same bulma for now then change it all later?
+// //move movie card to seperate file
+// //move MovieIndex to seperate file
+// //create home file
+// //create routes in app.js
+// //ensure links are all set up
 
 // Eve
 
-// Bulma and design
+// //Bulma and design
 
 // Thursday
 
 // Day
 
-// Display similar movies as cards at bottom
+// //Display similar movies as cards at bottom
 // Ability to favourite certain movies and add to list
 // random movie generator
 // filtering
@@ -51,6 +51,7 @@
 // Eve
 
 // Bulma
+// Add logo
 
 // Notes
 
@@ -61,24 +62,8 @@
 // we need to ADD to the favourite item we have already displayed
 
 
-// Similar cards
-// we already have been able to display the names of the similar cards
-// we want to be able to display the infomration in cards and have the abiblity to click on them, which would take you to that card's page
+// //Similar cards
+// //we already have been able to display the names of the similar cards
+// //we want to be able to display the infomration in cards and have the abiblity to click on them, which would take you to that card's page
 
-
-<div className="column is-11 is-offset-1">
-<h4 className="title is-4">Similar</h4>
-<div className="columns">
-  <div className="column is-one-quarter">
-    <div className="card">
-      <figure className="image image-is-3by4">
-        <img src={movie.similars[1].image} alt={movie.similars[1].title}></img>
-      </figure>
-      <div className="card-header">
-        <div className="card-header-title title is-7">{movie.similars[1].title}</div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
 
