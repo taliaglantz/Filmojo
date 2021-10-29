@@ -1,11 +1,11 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-
+import { Link, useParams } from 'react-router-dom'
+import MovieCard from './MovieCard'
 
 const MovieShow = () => {
   const [movie, setMovies] = useState()
-  // const [faveMovies, setFaveMovies] = useState([])
+  const [favourites, setFavourites] = useState([])
   const [hasError, setHasError] = useState(false)
   const { id } = useParams()
 
@@ -23,21 +23,34 @@ const MovieShow = () => {
       }
     }
     getData()
+    getMovieFromLocalStorage()
 
   }, [id])
-  // const idToState = (id) => {
-  //   setFaveMovies(id)
-  // }
+ 
 
-  const sendMovieToLocalStorage = (id) => {
-    window.localStorage.setItem('id', id)
+  const getMovieFromLocalStorage = () => {
+    const retrievedData = window.localStorage.getItem('favourites')
+    console.log('retrieved', retrievedData)
+    if (!retrievedData) return
+    const faves = JSON.parse(retrievedData)
+    console.log('faves', faves)
+    setFavourites(faves)
+  }
+
+  const setMovieToLocalStorage = (event) => {
+    console.log('event target id', event.target.id)
+    const newFavourite = event.target.id
+    const newFaves = [...favourites, newFavourite]
+    console.log('new faves', newFaves)
+    const addFave = JSON.stringify(newFaves)
+    console.log('add fave', addFave)
+    window.localStorage.setItem('favourites', addFave)
   }
 
   console.log('movie ->', movie)
 
   //console.log('MOVIE ON STATE ->', movie)
-  //  idToState(id)
-  //console.log('faveMovies ->', faveMovies)
+  console.log('FAVOURITE', favourites)
 
   return (
 
@@ -69,7 +82,7 @@ const MovieShow = () => {
                 <h4 className="title is-4 has-text-white">Run Time</h4>
                 <p>{movie.runtimeStr}</p>
                 <hr />
-                <button className="button is-danger is-rounded is-outlined" onClick={sendMovieToLocalStorage(id)}>FAVOURITE</button>
+                <button ID={movie.id} className="button is-danger is-rounded is-outlined" onClick={setMovieToLocalStorage}>FAVOURITE</button>
                 <hr />
               </div>
             </div>

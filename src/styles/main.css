@@ -13,6 +13,21 @@ body {
   letter-spacing: 3px;
 }
 
+#shuffle {
+  margin-top: 8px;
+}
+
+.card {
+  background: linear-gradient( rgb(0, 0, 0) 70%, rgb(80, 80, 80));
+}
+
+.card-header-title {
+  color: white;
+}
+.card-header {
+  color: white;
+}
+
 #curtains {
   background: url('../assets/curtain-17437.png');
   background-size: cover;
@@ -22,10 +37,19 @@ body {
 #navbar-link {
   font-weight: bold;
   text-transform: lowercase;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
  }
 
- 
+ /* #logo-img {
+   background: url('../assets/IMG_0610.PNG');
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 48px;
+ } */
+
+ /* #logo-img-dot {
+   display: none;
+ } */
 
  h4 {
    font-weight: bold;
