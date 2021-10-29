@@ -10,7 +10,7 @@ const Shuffle = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get('https://imdb-api.com/en/API/Top250Movies/k_ey8se4et')
+        const { data } = await axios.get('https://imdb-api.com/en/API/Top250Movies/k_baoxz6jf')
         setMovies(data.items)
         console.log('data items ->', data.items)
       } catch (error) {
@@ -41,13 +41,12 @@ const Shuffle = () => {
             {movies.length ?
               <Link to={`/movies/${movies[randomNumber].id}`}>
                 <div className="card">
-                  <div className="card-header">
-
-                    <div className="card-header-title title-is-4 has-text-dark">{movies[randomNumber].title}</div>
-                  </div>
                   <figure className="image image-is-1by1">
                     <img src={movies[randomNumber].image} alt={movies[randomNumber].title}></img>
                   </figure>
+                  <div className="card-header">
+                    <div className="card-header-title title is-4 has-text-white">{movies[randomNumber].title}</div>
+                  </div>
                 </div>
               </Link>
               :

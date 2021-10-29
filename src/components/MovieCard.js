@@ -13,8 +13,8 @@ const MovieCard = ({ id, rank, title, image }) => {
           </figure>
           <div className="card-header">
 
-            <div className="card-subtitle title is-7">{rank}
-              <div className="card-header-title title is-7">{title}</div>
+            <div className="card-subtitle title is-1" id="rank">{rank}
+              <div className="card-header-title title is-6" id="title-card">{title}</div>
             </div>
           </div>
 

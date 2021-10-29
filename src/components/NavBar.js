@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../assets/IMG_0612.PNG'
+import Logo from '../assets/white-with-logo.PNG'
+
 
 const NavBar = () => {
 
@@ -11,9 +12,9 @@ const NavBar = () => {
         <div className="navbar-brand">
           <span role="img" aria-label="logo" className="title" id="logo-img">
 
-            <Link to="/">  
-              <figure>            
-                <img src={Logo} width="48" height="48"/>
+            <Link to="/">
+              <figure>
+                <img src={Logo} width="60" height="60" />
               </figure>
             </Link>
 
@@ -23,30 +24,19 @@ const NavBar = () => {
           <div className="navbar-item">
             <Link className="has-text-white" id="navbar-link" to="/movies">Movie Index</Link>
           </div>
-          <button onClickclassName="button is-danger is-small is-rounded is-outlined" id="shuffle"><Link className="has-text-white" to="/shuffle">Shuffle</Link></button>
-          {/* <div className="select is-link is-small is-rounded" id="select">
-            <select>
-              <option value="genres">Genres</option>
-              <option value="action">Action</option>
-              <option value="comedy">Comedy</option>
-              <option value="drama">Drama</option>
-              <option value="fantasy">Fantasy</option>
-              <option value="horror">Horror</option>
-              <option value="mystery">Mystery</option>
-              <option value="romance">Romance</option>
-              <option value="sci-fi">Sci-fi</option>
-              <option value="thriller">Thriller</option>
-            </select>
-          </div> */}
+          <button className="button is-danger is-small is-rounded is-outlined" id="shuffle"><Link className="has-text-white" to="/shuffle">Shuffle</Link></button>
         </div>
         <div className="navbar-end">
-          <div className="navbar-item"><Link className="has-text-white" id="navbar-link" to="/favourites">🍿 Favourites</Link></div>
+
+          <div className="navbar-item"><Link className="has-text-white" id="navbar-link" to="/favourites">🍿 Favourites</Link>
+          </div>
+
         </div>
 
       </div>
 
 
-    </nav>
+    </nav >
 
 
   )

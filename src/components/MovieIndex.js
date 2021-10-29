@@ -7,7 +7,7 @@ const MovieIndex = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get('https://imdb-api.com/en/API/Top250Movies/k_ey8se4et')
+        const { data } = await axios.get('https://imdb-api.com/en/API/Top250Movies/k_baoxz6jf')
         setMovies(data.items)
         //console.log('data items ->', data.items)
       } catch (err) {

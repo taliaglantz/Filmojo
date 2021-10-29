@@ -1,20 +1,19 @@
-/* #hero-background {
-  background-image: url('../src/assets/curtain-17437.png'); */
-/* } */
 
 body {
-  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  /* font-family: 'Zen Kaku Gothic Antique', sans-serif; */
+  font-family: 'Futura', sans-serif;
   color: white;
 }
 
 #enter {
-  font-family: 'Limelight', cursive;
+  /* font-family: 'Limelight', cursive; */
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 
 #shuffle {
-  margin-top: 8px;
+  margin-top: 15px;
+  margin-left: 10px;
 }
 
 .card {
@@ -28,6 +27,18 @@ body {
   color: white;
 }
 
+#title-card {
+  text-shadow: none;
+  letter-spacing: 1px;
+}
+
+#rank {
+  margin-left: 5px;
+  color: rgb(37, 37, 37);
+  /* opacity: 50%; */
+  text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+}
+
 #curtains {
   background: url('../assets/curtain-17437.png');
   background-size: cover;
@@ -35,21 +46,12 @@ body {
   background-color: black;
 }
 #navbar-link {
-  font-weight: bold;
+  /* font-weight: bold; */
   text-transform: lowercase;
   letter-spacing: 1px;
+  margin-left: 10px;
  }
 
- /* #logo-img {
-   background: url('../assets/IMG_0610.PNG');
-   background-size: cover;
-   background-repeat: no-repeat;
-   width: 48px;
- } */
-
- /* #logo-img-dot {
-   display: none;
- } */
 
  h4 {
    font-weight: bold;
@@ -67,19 +69,17 @@ body {
  #index {
   /* background-image: linear-gradient( rgb(226, 40, 102), rgb(53, 53, 53)); */
   background: rgb(53, 53, 53);
+  height: auto;
  }
 
-/* #card-subtitle.title.is-7 {
-  padding-left: 20px;
-} */
-
-/* .card {
-  border-radius: 5px;
-} */
 
 #navbar {
   /* background-color: black; */
   background: linear-gradient( rgb(0, 0, 0), rgb(53, 53, 53));
+}
+
+.filmojo-logo {
+  font-size: 100px;
 }
 
 img {

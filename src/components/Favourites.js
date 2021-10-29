@@ -15,7 +15,7 @@ const Favourites = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get('https://imdb-api.com/en/API/Top250Movies/k_ey8se4et/')
+        const { data } = await axios.get('https://imdb-api.com/en/API/Top250Movies/k_baoxz6jf/')
         setNewMovie(data.items)
         console.log(data.items)
       } catch (err) {
@@ -35,12 +35,16 @@ const Favourites = () => {
 
   useEffect(() => {
     console.log('newMovie', newMovie)
-    const filteredMovies = newMovie && newMovie.filter((movie) => {
-      return favourites.includes(movie.id)
-    })
-    console.log('Im the filtered movies!', filteredMovies)
-    setNewArray(filteredMovies)
-    console.log(newArray)
+    try {
+      const filteredMovies = newMovie && newMovie.filter((movie) => {
+        return favourites.includes(movie.id)
+      })
+      console.log('Im the filtered movies!', filteredMovies)
+      setNewArray(filteredMovies)
+      console.log(newArray)
+    } catch (err) {
+      setHasError(true)
+    }
     //setInterval()
   }, [favourites])
 
@@ -48,15 +52,15 @@ const Favourites = () => {
   //   window.localStorage.clear()
   // }, 30000)
 
-  
+
   console.log(favourites)
   console.log('newArray', newArray)
 
-  
-  
+
+
   return (
     <>
-      <section className="section is-large" id="index">
+      <section className="section is-medium" id="index">
         <div className="container">
           {newArray ?
             <div className="columns is-multiline">
@@ -65,7 +69,7 @@ const Favourites = () => {
               })}
             </div>
             :
-            <h2 className="title has-text-centered">
+            <h2 className="title has-text-dark">
               {hasError ? 'Oops, something has gone wrong!' : 'Loading movies...'}
             </h2>
           }
