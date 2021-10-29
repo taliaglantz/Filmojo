@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import MovieCard from './MovieCard'
+// import MovieCard from './MovieCard'
 
 const MovieShow = () => {
   const [movie, setMovies] = useState()
@@ -15,7 +16,7 @@ const MovieShow = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`https://imdb-api.com/en/API/Title/k_baoxz6jf/${id}`)
+        const { data } = await axios.get(`https://imdb-api.com/en/API/Title/k_ey8se4et/${id}`)
         setMovies(data)
         // console.log('response ->', response)
       } catch (err) {
@@ -26,7 +27,7 @@ const MovieShow = () => {
     getMovieFromLocalStorage()
 
   }, [id])
- 
+
 
   const getMovieFromLocalStorage = () => {
     const retrievedData = window.localStorage.getItem('favourites')
@@ -89,50 +90,65 @@ const MovieShow = () => {
 
             <div>
               <h4 className="title is-4 has-text-white has-text-centered">More like this</h4>
-
               <div className="columns">
+
+
                 <div className="column is-one-quarter">
-                  <div className="card">
-                    <figure className="image image-is-1by2">
-                      <img src={movie.similars[0].image} alt={movie.similars[0].title}></img>
-                    </figure>
-                    <div className="card-header">
-                      <div className="card-header-title title-is-7">{movie.similars[0].title}</div>
+                  <Link to={`/movies/${movie.similars[0].id}`}>
+                    <div className="card">
+                      <figure className="image image-is-1by2">
+                        <img src={movie.similars[0].image} alt={movie.similars[0].title}></img>
+                      </figure>
+                      <div className="card-header">
+                        <div className="card-header-title title-is-7">{movie.similars[0].title}
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
+                </div>
+
+
+
+                <div className="column is-one-quarter">
+                  <Link to={`/movies/${movie.similars[1].id}`}>
+                    <div className="card">
+                      <figure className="image image-is-1by2">
+                        <img src={movie.similars[1].image} alt={movie.similars[1].title}></img>
+                      </figure>
+                      <div className="card-header">
+                        <div className="card-header-title title-is-7">{movie.similars[1].title}
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
                 </div>
 
                 <div className="column is-one-quarter">
-                  <div className="card">
-                    <figure className="image image-is-1by2">
-                      <img src={movie.similars[1].image} alt={movie.similars[1].title}></img>
-                    </figure>
-                    <div className="card-header">
-                      <div className="card-header-title title-is-7">{movie.similars[1].title}</div>
+                  <Link to={`/movies/${movie.similars[2].id}`}>
+                    <div className="card">
+                      <figure className="image image-is-1by2">
+                        <img src={movie.similars[2].image} alt={movie.similars[2].title}></img>
+                      </figure>
+                      <div className="card-header">
+                        <div className="card-header-title title-is-7">{movie.similars[2].title}
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
 
                 <div className="column is-one-quarter">
-                  <div className="card">
-                    <figure className="image image-is-3by4">
-                      <img src={movie.similars[2].image} alt={movie.similars[2].title}></img>
-                    </figure>
-                    <div className="card-header">
-                      <div className="card-header-title title-is-7">{movie.similars[2].title}</div>
+                  <Link to={`/movies/${movie.similars[3].id}`}>
+                    <div className="card">
+                      <figure className="image image-is-1by2">
+                        <img src={movie.similars[3].image} alt={movie.similars[3].title}></img>
+                      </figure>
+                      <div className="card-header">
+                        <div className="card-header-title title-is-7">{movie.similars[3].title}
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-
-                <div className="column is-one-quarter">
-                  <div className="card">
-                    <figure className="image image-is-3by4">
-                      <img src={movie.similars[3].image} alt={movie.similars[3].title}></img>
-                    </figure>
-                    <div className="card-header">
-                      <div className="card-header-title title-is-7">{movie.similars[3].title}</div>
-                    </div>
-                  </div>
+                  </Link>
                 </div>
 
               </div>
@@ -146,7 +162,7 @@ const MovieShow = () => {
         }
 
       </div>
-    </section>
+    </section >
   )
 }
 export default MovieShow

@@ -15,7 +15,7 @@ const Favourites = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get('https://imdb-api.com/en/API/Top250Movies/k_baoxz6jf/')
+        const { data } = await axios.get('https://imdb-api.com/en/API/Top250Movies/k_ey8se4et/')
         setNewMovie(data.items)
         console.log(data.items)
       } catch (err) {
@@ -41,14 +41,19 @@ const Favourites = () => {
     console.log('Im the filtered movies!', filteredMovies)
     setNewArray(filteredMovies)
     console.log(newArray)
+    //setInterval()
   }, [favourites])
 
+  // setInterval(() => {
+  //   window.localStorage.clear()
+  // }, 30000)
 
-
+  
   console.log(favourites)
   console.log('newArray', newArray)
 
-
+  
+  
   return (
     <>
       <section className="section is-large" id="index">

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Logo from '../assets/IMG_0612.PNG'
 
 const NavBar = () => {
 
@@ -12,8 +12,8 @@ const NavBar = () => {
           <span role="img" aria-label="logo" className="title" id="logo-img">
 
             <Link to="/">  
-              <figure className="image image-is-1by1">            
-                <img src="../src/assets/download.png" width="48" height="28"/>
+              <figure>            
+                <img src={Logo} width="48" height="48"/>
               </figure>
             </Link>
 
@@ -23,7 +23,7 @@ const NavBar = () => {
           <div className="navbar-item">
             <Link className="has-text-white" id="navbar-link" to="/movies">Movie Index</Link>
           </div>
-          <button className="button is-danger is-small is-rounded is-outlined" id="shuffle"><Link className="has-text-white" to="/shuffle">Shuffle</Link></button>
+          <button onClickclassName="button is-danger is-small is-rounded is-outlined" id="shuffle"><Link className="has-text-white" to="/shuffle">Shuffle</Link></button>
           {/* <div className="select is-link is-small is-rounded" id="select">
             <select>
               <option value="genres">Genres</option>
