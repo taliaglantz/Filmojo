@@ -22,7 +22,7 @@ const NavBar = () => {
         </div>
         <div className="navbar-start">
           <div className="navbar-item">
-            <Link className="has-text-white" id="navbar-link" to="/movies">Movie Index</Link>
+            <Link className="has-text-white" id="navbar-link" to="/movies">top movies</Link>
           </div>
           <button className="button is-danger is-small is-rounded is-outlined" id="shuffle"><Link className="has-text-white" to="/shuffle">Shuffle</Link></button>
         </div>

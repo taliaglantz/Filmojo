@@ -15,7 +15,7 @@ const Favourites = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get('https://imdb-api.com/en/API/Top250Movies/k_baoxz6jf/')
+        const { data } = await axios.get('https://imdb-api.com/en/API/Top250Movies/k_0vc4n4g6/')
         setNewMovie(data.items)
         console.log(data.items)
       } catch (err) {
