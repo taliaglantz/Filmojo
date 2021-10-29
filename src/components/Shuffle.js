@@ -34,13 +34,13 @@ const Shuffle = () => {
   return (
     <>
 
-      <section className="hero is-fullheight-with-navbar is-dark">
+      <section className="hero is-fullheight-with-navbar is-dark" id="curtains">
         <div className="columns is-centered">
 
           <div className="column is-one-quarter-desktop is-one-third-tablet">
             {movies.length ?
               <Link to={`/movies/${movies[randomNumber].id}`}>
-                <div className="card">
+                <div className="card" id="shufflecard">
                   <figure className="image image-is-1by1">
                     <img src={movies[randomNumber].image} alt={movies[randomNumber].title}></img>
                   </figure>
