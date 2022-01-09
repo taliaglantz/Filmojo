@@ -3,7 +3,9 @@
 <img src="src/assets/grey-logo.PNG" alt="filmojo logo" width=300/>
 
 ## Table of Contents
-- [Overview](#overview) 
+- [Overview](#overview)
+- [Project Description](#project-description)
+- [Brief](#brief)
 - [Technologies used](#technologies-used)
 - [Planning](#planning)
 - [Build](#build)
@@ -19,12 +21,8 @@ This project was my second project created during General Assembly’s Software 
 ### Goal 
 Pair-programme the build a React application that consumes a public API.
 
-
 ### Timeframe
 2-day Hackathon
-
-### Project description
-Filmojo is an app that uses two IMDb APIs to list their top 250 movies. The app was created in a 48-hour pair-coded hackathon and it was my first experience of using public APIs and React.
 
 ### Deployed link
 https://filmojo-app.netlify.app/ 
@@ -33,6 +31,22 @@ https://filmojo-app.netlify.app/
 1. Either clone or download the source code.
 2. Install yarn in terminal by running `yarn`.
 3. Start server by running `yarn start`.
+
+<a name="project-description"></a>
+## Project description
+Filmojo is an app that uses two IMDb APIs to list their top 250 movies. The app was created in a 48-hour pair-coded hackathon and it was my first experience of using public APIs and React.
+
+<a name="brief"></a>
+## Brief
+
+Your app must:
+
+* Consume a public API – this could be anything but it must make sense for your project.
+* Have several components
+* The app can have a router - with several "pages", this is up to you and if it makes sense for your project.
+* Include wireframes - that you designed before building the app.
+* Be deployed online and accessible to the public (hosted on your public github, not GA github!)
+​
 
 <a name="technologies-used"></a>
 ## Technologies used
