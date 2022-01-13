@@ -4,7 +4,6 @@
 
 ## Table of Contents
 - [Overview](#overview)
-- [Project Description](#project-description)
 - [Brief](#brief)
 - [Technologies used](#technologies-used)
 - [Planning](#planning)
@@ -16,10 +15,12 @@
 
 <a name="overview"></a>
 ## Overview
-This project was my second project created during General Assembly’s Software Engineering Immersive Course, which I completed from September-December 2021.
+Filmojo was my second project created during General Assembly’s Software Engineering Immersive Course, , which I completed from September-December 2021.
 
-### Goal 
-Pair-programme the build a React application that consumes a public API.
+<strong>The goal:</strong> pair-programme the build of a React application that consumes a public API.
+
+Filmojo is an app that uses two IMDb APIs to list the top 250 movies. The app was created in a 48-hour pair-coded hackathon and it was my first experience of using public APIs and React. 
+
 
 ### Timeframe
 2-day Hackathon
@@ -31,10 +32,6 @@ https://filmojo-app.netlify.app/
 1. Either clone or download the source code.
 2. Install yarn in terminal by running `yarn`.
 3. Start server by running `yarn start`.
-
-<a name="project-description"></a>
-## Project description
-Filmojo is an app that uses two IMDb APIs to list their top 250 movies. The app was created in a 48-hour pair-coded hackathon and it was my first experience of using public APIs and React.
 
 <a name="brief"></a>
 ## Brief
@@ -58,8 +55,8 @@ Your app must:
 - HTML5
 - CSS
 - Bulma CSS Framework
-- React-router-dom
-- react-animations
+- React-router-dom for component-based routing
+- react-animations for implementation of animations
 
 ### APIs:
 - Top250Movies and Title - both from https://imdb-api.com/ 
@@ -67,7 +64,6 @@ Your app must:
 ### Dev tools:
 - Yarn
 - Insomnia
-- Git and GitHub
 - Google Chrome dev tools
 - Netlify (deployment)
 
